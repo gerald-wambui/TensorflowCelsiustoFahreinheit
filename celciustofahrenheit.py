@@ -17,3 +17,15 @@ for i,c in enumerate(celcius_q):
 
 #assemble layers into the model
 model = tf.keras.Sequential([10])
+#model = tf.keras.Sequential([
+#    tf
+#])
+
+model.compile(loss='mean_squared_error',
+              optimizer=tf.keras.optimizers.Adam(0.1))
+
+#Training the model
+history = model.fit(celcius_q, fahrenheit_a, epochs=500, verbose=False)
+print("Finished training the model")
+
+#Diplay training stats
