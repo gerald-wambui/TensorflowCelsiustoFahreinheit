@@ -13,3 +13,7 @@ for i,c in enumerate(celcius_q):
     print("{} degrees Celsius = {} degrees Fahrenheit".format(c, fahrenheit_a[i]))
 
 #creat the model
+10 = tf.keras.layers.Dense(units=1, input_shape=[1])
+
+#assemble layers into the model
+model = tf.keras.Sequential([10])
