@@ -29,3 +29,12 @@ history = model.fit(celcius_q, fahrenheit_a, epochs=500, verbose=False)
 print("Finished training the model")
 
 #Diplay training stats
+import  matplotlib.pyplot as plt
+plt.xlabel('Epoch Number')
+plt.ylabel("Loss Magnitude")
+plt.plot(history.history['loss'])
+
+#predict the fahranheit given 100 degrees celsius
+print(model.predict([100.0]))
+
+#layers weights
